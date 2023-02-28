@@ -1,0 +1,185 @@
+* {
+  margin-top: 0;
+  padding: 0;
+  /* background-color: lime; */
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  background-color: blueviolet;
+}
+
+header > img {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 80px;
+}
+
+#burger{
+  display: none;
+}
+
+nav {
+  height: auto;
+  background-color: yellowgreen;
+}
+
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.submeniu {
+  visibility: hidden;
+}
+
+ul.submeniu li:hover {
+  background-color: salmon;
+}
+
+ul.meniu div:hover {
+  background-color: salmon;
+}
+
+ul.meniu > li:hover > ul.submeniu {
+  visibility: visible;
+  position: relative;
+  z-index: 10;
+}
+
+ul.meniu {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+ul.meniu li {
+  flex-grow: 1;
+  border: 0.5px solid white;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: greenyellow;
+}
+
+#container-pagina {
+  display: grid;
+  grid-template-areas:
+    "zona1 zona1 zona1 zona1"
+    "zona2 zona2 zona2 zona3"
+    "zona2 zona2 zona2 zona4"
+    "zona5 zona5 zona5 zona5";
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+#home {
+  border: 2px solid;
+  grid-area: zona1;
+}
+
+#noutati {
+  border: 2px solid;
+  grid-area: zona2;
+}
+
+#anunturi {
+  border: 2px solid;
+  grid-area: zona3;
+}
+
+#orar {
+  border: 2px solid;
+  grid-area: zona4;
+}
+
+#galerie {
+  border: 2px solid;
+  grid-area: zona5;
+}
+
+#container-poze {
+}
+
+article:nth-of-type(1) > img {
+  float: left;
+  margin-right: 1em;
+}
+
+article:nth-of-type(1)>img:hover{
+  animation-name: maresc;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+section {
+  padding: 10px;
+}
+
+article:nth-of-type(2) > img {
+  float: right;
+  margin-left: 1em;
+}
+
+article:nth-of-type(2)>img:hover{
+  animation-name: maresc;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+#container-poze{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+#container-poze > figure{
+  text-align: center;
+}
+
+
+.stil{
+  font-size: 20px;
+  color: pink;
+
+}
+/*
+header > img{
+  transition: transform 3s 0.5s;
+}
+
+header > img:hover{
+  transform: rotate(360deg) scale(0);
+}
+*/
+
+@keyframes maresc{
+  from {
+    height: 25rem;
+  }
+  to{
+    height: 30rem;
+  }
+}
+
+@keyframes maresc{
+  from {
+    transform: scale(0);
+  }
+  to{
+    transform: scale(100);
+  }
+}
+
+@media screen and (min-width: 1001px){
+  body{
+    background-color: red;
+  }
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1647618557 source:c:\toate\facultate\info\an 1 semestru 2\programare orientata pe obiecte\tema 1 lab(tema 7)\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+

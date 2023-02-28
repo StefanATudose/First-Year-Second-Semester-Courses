@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649164175 source:c:\toate\facultate\info\an 1 semestru 2\limbaje formale si automate\lab\automat mealy\main.cpp
+	<fstream>
+	<vector>
+	<string>
+

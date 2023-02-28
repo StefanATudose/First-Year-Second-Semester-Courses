@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex2</title>
+    <script type="text/javascript">
+      var vectString = ["Buna ziua", "Ma numesc Tudose", "Alexandru-Stefan", "Si sunt increzator", "Ca voi lua", "Nota 10"];
+      var elemInit = new Array;
+      window.onload = function(){
+        document.body.style.height = screen.height + "px";
+        var lista = document.createElement("ul");
+        lista = document.body.appendChild(lista);
+        for (let i = 0; i < 10; i++){
+          var element = document.createElement("li");
+          element.innerHTML = vectString[Math.floor(Math.random()*5)];
+          elemInit.push(element.innerHTML);
+          var elDoc = lista.appendChild(element);
+          elDoc.addEventListener("click", function(){
+            var charList = this.innerHTML.split("");
+            charList.reverse();
+            this.innerHTML = charList.join("");
+            event.stopPropagation();
+          });
+        }
+        document.body.addEventListener("click", function(){
+          var listaPagina = document.getElementsByTagName("li");
+          for (let i = 0; i < 10; i++){
+            listaPagina[i].innerHTML = elemInit[i];
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

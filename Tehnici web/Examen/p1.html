@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex1</title>
+    <style media="screen">
+      #parinte{
+        height: 150px;
+        width: 50%;
+        display: grid;
+        grid-template-areas:
+        'div44 div44 div44'
+        '. div11 .'
+        'div22 . div33';
+        grid-gap: 2px;
+	
+}
+      #div1{
+        grid-area: div11;
+      }
+      #div2{
+        grid-area: div22;
+      }
+      #div3{
+        grid-area: div33;
+      }
+      #div4{
+        grid-area: div44;
+      }
+      .copil{
+        border-style: dotted;
+        border-width: 2px;
+        border-color: black;
+      }
+        @media screen and (min-width: 200px) and (max-width: 600px){
+          #parinte{
+            grid-template-areas: 'div11'
+                                  'div22'
+                                  'div33'
+                                  'div44';
+            transition: height 3s;
+          }
+          #parinte:hover{
+            height: 300px;
+          }
+          #parinte:hover > #div4{
+            border-color: blue;
+          }
+
+          .copil{
+            width: 100%;
+          }
+
+          #div1{
+            grid-column: auto;
+          }
+          #div2{
+            grid-column: auto;
+          }
+          #div3{
+            grid-column: auto;
+          }
+          #div4{
+            grid-column: auto;
+            transition: border-color 3s;
+          }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id = "parinte">
+      <div id = "div1" class = "copil"></div>
+      <div id = "div2" class = "copil"></div>
+      <div id = "div3" class = "copil"></div>
+      <div id = "div4" class = "copil"></div>
+    </div>
+
+  </body>
+</html>

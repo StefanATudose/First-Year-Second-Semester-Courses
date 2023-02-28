@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex3</title>
+    <script type="text/javascript">
+      function getRandColor(){
+        let codCuloare = Math.floor(Math.random()* 0xFFFFFF);
+        codCuloare = codCuloare.toString(16);
+        codCuloare = "#" + codCuloare.padStart(6, 0);
+        return codCuloare;
+      }
+
+      window.onload = function(){
+        if (localStorage.length > 0){
+          document.body.style.backgroundColor = localStorage.getItem("culoare");
+          localStorage.clear();
+        }
+        document.body.addEventListener("keydown", function(event){
+          if (event.key == '1'){
+            var buton = document.getElementById("btn1");
+            var culRand = getRandColor();
+            if (localStorage.length == 0)
+              localStorage.setItem('culoare', culRand);
+            buton.style.backgroundColor = culRand;
+            var stergere = setInterval(function(){buton.remove();}, 3000);
+            stergere;
+          }
+          if (event.key == '2'){
+            var buton = document.getElementById("btn2");
+            var culRand = getRandColor();
+            if (localStorage.length == 0)
+              localStorage.setItem('culoare', culRand);
+            buton.style.backgroundColor = culRand;
+            var stergere = setInterval(function(){buton.remove();}, 3000);
+            stergere;
+          }
+          if (event.key == '3'){
+            var buton = document.getElementById("btn3");
+            var culRand = getRandColor();
+            if (localStorage.length == 0)
+              localStorage.setItem('culoare', culRand);
+            buton.style.backgroundColor = culRand;
+            var stergere = setInterval(function(){buton.remove();}, 3000);
+            stergere;
+          }
+          if (event.key == '4'){
+            var buton = document.getElementById("btn4");
+            var culRand = getRandColor();
+            if (localStorage.length == 0)
+              localStorage.setItem('culoare', culRand);
+            buton.style.backgroundColor = culRand;
+            var stergere = setInterval(function(){buton.remove();}, 3000);
+            stergere;
+          }
+          if (event.key == '5'){
+            var buton = document.getElementById("btn5");
+            var culRand = getRandColor();
+            if (localStorage.length == 0)
+              localStorage.setItem('culoare', culRand);
+            buton.style.backgroundColor = culRand;
+            var stergere = setInterval(function(){buton.remove();}, 3000);
+            stergere;
+          }
+        });
+      }
+
+    </script>
+  </head>
+  <body>
+    <button id = "btn1" type="button" name="button">1</button>
+    <button id = "btn2" type="button" name="button">2</button>
+    <button id = "btn3" type="button" name="button">3</button>
+    <button id = "btn4" type="button" name="button">4</button>
+    <button id = "btn5" type="button" name="button">5</button>
+  </body>
+</html>

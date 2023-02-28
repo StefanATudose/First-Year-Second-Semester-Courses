@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Clasice</title>
+  <link rel="stylesheet" href="stylesclasice.css" media = "screen and (min-width: 800px)">
+  <link rel="stylesheet" href="stylesclasicemic.css" media="screen and (max-width: 799px)">
+  <!--Fonturi-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Tudose">
+    <nav class="meniu">
+      <ul id="meniu">
+        <li>
+          <div><a href="index2.html">Meniu principal</a></div>
+          <ul class="submeniu">
+            <li> <a href="index2.html#bun_venit"> Bun venit </a></li>
+            <li><a href="index2.html#despre_mine">Despre mine</a></li>
+            <li><a href="index2.html#statistici">Statistici</a></li>
+            <li><a href="index2.html#goodreads">Profil Goodreads</a></li>
+            <li><a href="index2.html#contact">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <div><a href="contemporane.html">Contemporana</a></div>
+          <ul class="submeniu">
+            <li><a href="contemporane.html#meniu">De ce?</a></li>
+            <li><a href="contemporane.html#star5">5 stele</a></li>
+            <li><a href="contemporane.html#star4">4 stele</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div><a href="clasice.html">*Clasica*</a></div>
+          <ul class="submeniu">
+            <li><a href="clasice.html#meniu">De ce?</a></li>
+            <li><a href="clasice.html#star5">5 stele</a></li>
+            <li><a href="clasice.html#star4">4 stele</a></li>
+            <li><a href="clasice.html#star3">3 stele</a></li>
+            <li><a href="clasice.html#star2">2 stele</a></li>
+            <li><a href="clasice.html#star1">1 stea</a></li>
+          </ul>
+        </li>
+        <li>
+          <div>Non-Fictiune</div>
+          <ul class="submeniu">
+            <li>De ce?</li>
+            <li>1 stea</li>
+            <li>2 stele</li>
+            <li>3 stele</li>
+            <li>4 stele</li>
+            <li>5 stele</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="textintroclasic">
+      <h1>De ce ar trebui sa citesti literatura clasica?</h1>
+      <p>Ca valoare intelectuala, literatura clasica constituie o punte intre cea contemporana si non-fictiunea. Desi scopul principal al acesteia nu este acela de a-si elitiza cititorii prin imbaierea acestora
+        in cunostinte, aduce referinte ocazionale la numeroase aspecte de cultura ale perioadei istorice in care sunt situate, incercand sa satisfaca apetitul elevat al paturii superioare pe care o tinteste.
+        Intervine o intrebare fireasca: Daca tot castig mai multe cunostinte din non-fictiune, de ce sa mai sacrific timp pretios parcurgand literatura clasica cand as putea studia un volum de stiinta sau filosofie?
+        Raspunsurile sunt tot atat de firesti: pentru ca, efortul depus inspre a le intelege este mai redus, ceea ce necesita mai putina pregatire psihica precursoare lecturii si evita, ca si la volumele contemporane,
+        ceea ce numesc eu "febra cerebrala", si deoarece ofera o perspectiva romanticizata istoriei vremii respective. Sansele de a empatiza cu personajele este mult mai ridicat, fiind oferita o perspectiva mult mai personala
+        si mai imersiva in realitatea trecutului.</p>
+    </div>
+  </header>
+  <div class="divBtnApl">
+    <h3>Creeaza-ti propria lista de recenzii! Dupa initializarea aplicatiei,
+    apasa pe un titlu din lista de mai jos
+    pentru a-l adauga la propria colectie, apoi apasa pe butonul "Generaza colectie!",
+    pentru a o genera si accesa!</h3>
+    <button type="button" name="button" id = "startApl">Initializeaza aplicatia!</button>
+    <button type="button" name="button" id = 'btnGenerare'> Generarea selectiei</button>
+    <br><br><br>
+    <h3>Puteti apasa pe acest buton pentru a sterge elemente din pagina unul cate unul, in caz ca ati prefera
+    sa nu vedeti opinia mea amatoare despre anumite volume.</h3>
+    <button type="button" name="button" id = "btnStergere">Sterge-mi recenziile!</button>
+  </div>
+  <section>
+    <div id="star5">
+
+      <div class="recenzie">
+        <img src="images/batran.jpg" alt="batranul si marea pic">
+        <h1>Batranul si marea</h1>
+        <h2>Ernest Hemingway</h2>
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Fiind un cititor atat de nerabdator e un rezultat remarcabil de neobisnuit cum o carte centrata atat de mult pe liniste, intelepciunea si domoliciunea varstei inaintate si pe analizarea unui fir narativ
+          sarac, prin monologul interior al unui batran, a reusit sa ma miste intr-o asemenea maniera. In mod cert, nu este o carte pentru oricine, in special nu pentru tipologia mea de receptor. Totusi, pentru mine reprezinta o
+          capodopera care nici pana acum nu stiu de ce mi-a placut atat de mult. In orice caz, pot spune ca mi-a intarit rezilienta psihica in fata esecului si mi-a solidificat caracterul.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/19.jpeg" alt="1984 pic">
+        <h1>1984</h1>
+        <h2>George Orwell</h2>
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Cea mai monumentala creatie a lui Orwel, 1984 constituie o critica vehementa adusa la adresa regimurilor totalitariste, reliefata printr-una dintre cele mai sumbre perspective ale literaturii: a omului persecutat,
+          ingradit si torturat din toate punctele de vedere, atat spiritual, cat si ideologic si experential. Turnura de situatie de la jumatatea volumului a marcat fara indoiala atemporalitatea si legitimitatea firului narativ,
+          taind in plin avand ceea ca parea conturarea unui cliseu de natura eroica.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/negri.jpg" alt="10 negrii pic">
+        <h1>Zece Negrii Mitiei</h1>
+        <h2>Agatha Christie</h2>
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Christie spunea despre aceasta lucrare ca a inceput sa o scrie drept o provocare pentru ea insasi, ca sa-si demonstreze ca este capabila de a oferi forma unei inlantuiri de evenimente stranii atat de fabuloase in aparenta,
+          dar cu o ancorare bine-definita in realism, explicitata pentru cititorii sai in epilog. Pentru mine, Zece Negrii Mititei reprezinta epitomul literaturii politiste, care tinde inspre limita teoretica a perfectiunii in aceasta
+          categorie literara. Volumul a setat nivelul de asteptari atat de sus incat, dupa finalizarea povestii, nu am mai citit nicio alta carte politista.</p>
+      </div>
+    </div>
+
+    <div id="star4">
+      <div class="recenzie">
+        <img src="images/crusoe.jpg" alt="rob crusoe img">
+        <h1>Robinson Crusoe</h1>
+        <h2>Daniel Defoe</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Un volum clasic care a pus bazele literaturii de aventura englezesti, care iese in evidenta prin PUTEREA inspirata de protagonist pus in fata celei mai mari adversitati pentru omenire: supravietuirea pe cont propriu, in
+          salbaticie. In afara de admirabilitatea inspirata de figura centrala a operei, ea este oarecum previzibila, construind un progres treptat, cu suisuri si coborasuri, in starea de trai a lui Robinson.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/adam.jpg" alt="adam si eva pic">
+        <h1>Adam si Eva</h1>
+        <h2>Liviu Rebreanu</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Prin Adam si Eva, Rebreanu renunta atat la stilul sau sumbru si viziunea sa decrepita regasita in romanele sale reprezentative, cat si la stilul realist in care isi contureaza momentele subiectului. Volumul este o expresie
+          a spiritualitatii autorului, explorand imaginea credintei in reincarnare si in ideea de suflete pereche. Aspectul practic al operei este acela de anihilare al sperantei in dragoste ideala, cultivata de consumerismul contemporan,
+          prin setarea unui standard al conceptului atat de ridicat, incat devine literalmente irealizabil in parametrii lumii reale. In consecinta, lectura cartii constituie o etapa importanta in dezvoltarea celor aflati inca in etapa iluzorie
+          a cautarii dragostei "adevarate".</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/maestru.jpg" alt="maestrul si margareta img">
+        <h1>Maestrul si Margareta</h1>
+        <h2>Mihail Bulgakov</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Volum inspirat in mod evident din Faust, care portretizeaza venirea diavolului insotit de un anturaj demonic in Moscova, si interactiunea sa cu efect comic cu comunitatea elitista locala de scriitori. Firul narativ principal
+          este intercalat ocazional cu un al doilea, tot de natura religioasa, o reimaginare a procesului si a rastignirii lui Iisus Hristos. Per total, este o lucrare ce isi are farmecul in substratul sau tematic flexibil, slab definit,
+          ce incita imaginatia receptorului, dar care pierde prin idilizarea exagerata a romantei (intr-un mod mult imperfect fata de reusita lui Rebreanu) si crearea unui amalgam intre divinitate si profan neinteligibil. </p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/insula.jpg" alt="insula misterioasa pic">
+        <h1>Insula Misterioasa</h1>
+        <h2>Jules Verne</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Volum ce seamana izbitor de mult cu Robinson Crusoe, dar care reuseste sa portretizeze o atmosfera aproape diametral opusa. In timp ce Robinson este invaluit constant de o teama fata de propria siguranta, exploratorii lui
+          Verne sunt cufundati aproape perpetuu de pozitivism si de o adaptabilitate impresionanta, emanand entuziasm. Problemele lor principale sunt constituite de factori externi adesea inexplicabili, cum ar fi ocurentele misterioase
+          frecvente de pe insula si un atac al piratilor ce are loc in a doua parte a povestii. Cu toate acestea, rezilienta psihica si increderea reciproca ii socoteste mereu victoriosi, ceea ce inspira aceleasi trasaturi in caracterele
+          cititorilor.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/fundatia.jpg" alt="fundatia pic">
+        <h1>Fundatia (vol 1 si 2)</h1>
+        <h2>Isaac Asimov</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Asimov, parintele genului stiintifico-fantastic, seteaza asteptarile ramurii literare la un nivel relativ ridicat. Pe langa elementele futuriste ce tin de construirea universului fictional, cele doua volume abordeaza o tematica
+          politica de amploare, de tipul dominatiei prin misionarism religios sau prin dependenta de comert.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/laleaua.jpg" alt="lalea neagra pic">
+        <h1>Laleaua neagra</h1>
+        <h2>Alexandre Dumas</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>O carte reprezentativa pentru romantismul francez, Laleaua neagra relateaza in maniera realista tumultul societatii franceze post-napoleonice, redata prin perspectiva subiectiva a unui botanist pasionat.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/ferma.jpg" alt="ferma animalelor pic">
+        <h1>Ferma Animalelor</h1>
+        <h2>George Orwell</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Una dintre primele critici aduse de catre Orwell totalitarismului, ferma animalelor constituie o transpunere a atrocitatilor nemeritocratice ale centralizarii puterii intr-o clasa conducatoare, intr-un sistem
+          care are ca scop initial insasi abolirea acestui tip de diviziune de clasa, intr-o maniera accesibila oricarui tip de cititor. Personal, prima data cand am vazut filmul animat inspirat din carte a fost la 12 ani la ora de istorie,
+          o varsta la care initial nu aveam habar de conflictele ideologice ce au avut loc in ultimul secol, dar la care totusi am putut intelege consecintele despotismului la nivelul unei societati.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/meta.jpg" alt="metamorfoza pic">
+        <h1>Metamorfoza</h1>
+        <h2>Franz Kafka</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Kafka reuseste sa contureze sentimentul de alienare prin asocierea protagonistului un element supranatural figurativ, parabolic. Transformarea in gandac a lui Gregor este ceva ce ni se poate intampla tuturor in interior,
+          cand realizam ca mediul in care ne-am pricopsit nu ne mai reprezinta si nu mai are influenta pe care ne-am dori-o asupra noastra. Consecintele acestei realizari sunt enuntate in detaliu pe parcursul volumului, pe care il recomand
+          chiar si ca pe o experienta recreativa.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/nimicnou.jpg" alt="nimic nou pe frontul de vest pic">
+        <h1>Nimic nou pe frontul de vest</h1>
+        <h2>Erich Maria Remarque</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Volumul reprezinta o demitizare profunda a razboiului, prin transpunerea in maniera realista, tragica, si distructiva a catastrofelor pe care acesta le are atat asupra intregilor comunitati de civili prinse la mijloc intr-un
+          conflict in care nu au ales sa participe, cat si asupra spiritelor soldatilor implicati. Camaraderia este sigura motivatie sugerata a recrutilor de a continua lupta, care in toiul crizei capata dimensiuni hiperbolice.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/strainul.jpg" alt="strainul pic">
+        <h1>Strainul</h1>
+        <h2>Albert Camus</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Dintre toate operele lui Camus pe care le-am citit, pot spune ca "Strainul" este singura care mi-a placut. Nonsalanta si filosofia de viata a protagonistului, desi etichetate in parcursul actiunii de opinia majoritara a fi imorale,
+          descriu o absenta admirabila a emotiilor si a impulsurilor primitive, lasand loc unei ratiuni de ordin superior. Pus fata in fata cu tendinta umana de a se orienta dupa propriile emotii, judecand diferenta dintre bine si rau strict
+          sub filiera emotiilor cauzate partilor, protagonistul isi pierde insusi aura divina de raceala si este tulburat de o absurditate atat de profunda a fiintei umane obsinuite, incapabila sa isi trateze propria existenta cu pragmatism.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/barsca.jpg" alt="Uimitoarea aventura a misiunii Barsac">
+        <h1>Uimitoarea aventura a misiunii Barsac</h1>
+        <h2>Jules Verne</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Din putinul pe care mi-l amintesc din cartea pe care am citit o in clasa a 2-a, pot spune ca Jules Verne, inainte de moartea sa, a atins pragul de maiestrie relativa la perioada in care a scris, dovedind capacitati impresionante
+          de a jongla cu distributia actiunii in momentele subiectului, in asa fel incat sa impresioneze cu lovituri de teatru de o anvergura exponentiala, anticipate chiar din primele pagini ale volumului.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/malot.jpg" alt="singur pe lume pic">
+        <h1>Singur pe lume</h1>
+        <h2>Hector Malot</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Alta carte pe care mi-o amintesc foarte vag, citind-o tocmai in clasa intai, Singur pe lume, cred ca a fost primul roman mai lung de 100 de pagini pe care l-am parcurs. Cu un fir narativ foarte amplu si emotionant, o recomand
+          tipologiei de cititori nerabdatori.</p>
+
+      </div>
+
+
+      <div class="recenzie">
+        <img src="images/vacanta.jpeg" alt="jocul de a vacanta pic">
+        <h1>Jocul de-a vacanta</h1>
+        <h2>Mihail Sebastian</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Desi scurta ca intindere, "Jocul de-a vacanta" ilustreaza cu mare pricepere 2 teme care, pentru mine, au o insemnatate foarte ridicata: pretul si dulceata libertatii si efemeritatea dragostei. Probabil daca nu as fi fost
+          atat de impresionat de aceste teme nu as fi evaluat cartea atat de bine, de aceea o recomand doar celor care considera ca au o legatura puternica cu sferele literare mentionate.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/alex.jpg" alt="alexandru Lapusneanul pic">
+        <h1>Alexandru Lapusneanul</h1>
+        <h2>Costache Negruzzi</h2>
+        <h3>⭐⭐⭐⭐</h3>
+        <p>Cartea pentru bac care, fara indoiala, mi-a placut cel mai mult, datorita curajului cu care este expusa cruzimea istorica in fraze si a derularii rapide a actiunii, care nu lasa timp de plictiseala pentru nerabdatori. </p>
+      </div>
+    </div>
+
+
+    <div id="star3">
+      <div class="recenzie">
+        <img src="images/societate.jpg" alt="drumul spre inalta societate pic">
+        <h1>Drumul spre inalta societate</h1>
+        <h2>John Braine</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>O carte superficiala, care promoveaza valori nemeritocratice si care portretizeaza un protagonist parvenit si slab de caracter in incercarea sa de a ajunge in "inalta societate" prin asocierea romantica cu o partenera
+          de origini instarite, timp in care se preocupa cu prezenta unei femei mai in varsta, care nu se aliniaza cu planurile sale si sfarseste tragic. Desi a castigat cateva stele in ochii mei prin duritatea expunerii si a criticarii
+          slabiciunii personajelor de catre ocazionale accese ale naratorului, nu recomand.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/sperante.jpg" alt="marile sperante pic">
+        <h1>Marile Sperante</h1>
+        <h2>Charles Dickens</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Un bildungsroman monoton, in care firul epic este reprezentat in cea mai mare proportie de conturarea unor turnari de situatie telenovelice in punctul culminant al actiunii.</p>
+
+      </div>
+
+
+      <div class="recenzie">
+        <img src="images/procesul.jpg" alt="procesul">
+        <h1>Procesul</h1>
+        <h2>Franz Kafka</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>O carte care, desi abordeaza o serie de teme interesante, care includ, dar nu se limiteaza la efectul dezarmant al autoritatii asupra supusilor, redundanta si superficialitatea formalitatilor si a birocratiei,
+          si superficialitatea societatii ca un intreg, in clasa a 10-a m-a tinut intr-un constant sentiment de plictiseala repetitiva, poate probabil pentru a ma imersa in sentimentul potretizat in universul fictional.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/greatnewworld.jpg" alt="minunata lume noua pic">
+        <h1>Minunata Lume Noua</h1>
+        <h2>Aldous Huxley</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Carte care, desi pleaca de la o premisa inovativa, potrivit careia cele mai ideale utopii par mai degraba distopii dupa standardele curente, are o executie ce lasa de dorit, fructificand un fir epic sec si
+          conturat intr-un stil incompetent. Pentru mine, volumul reprezinta un mare potential irosit.</p>
+
+      </div>
+
+
+      <div class="recenzie">
+        <img src="images/crima.jpg" alt="crima si pedeapsa pic">
+        <h1>Crima si pedeapsa</h1>
+        <h2>Fyodor Dostoievski</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Lansez opinia controversata care spune ca repercusiunile psihologice pe care Dostoievski le ilustreaza in acest roman asupra protagonistului nu sunt nimic mai mult decat niste grosolane exagerari. In absurda
+          posibilitate in care de fapt Raskolnikov era de fapt un individ cu o constiinta foarte bine definita, cu un simt al datoriei puternic, din partea caruia ar fi fost firesti astfel de remuscari, tin sa reamintesc
+          premeditarea cu care a planuit crima batranei, planificare de care niciun astfel de om nu ar fi in stare, indiferent de constrangerile ce tin de mediu care i s-ar fi putu aplica. Doar un om virtuos ar fi avut comportamentul
+          lui Raskolnikov pe tot parcursul volumului, dar un om virtuos niciodata nu ar fi facut ce a facut protagonistul nostru la inceputul actiunii.</p>
+
+      </div>
+
+
+      <div class="recenzie">
+        <img src="images/ocolul.jpg" alt="ocolul pamantului in 80 de zile pic">
+        <h1>Ocolul pământului în 80 de zile</h1>
+        <h2>Jules Verne</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Alta carte pe care am citit-o acum foarte mult timp, pe care o recomand celor ce vor sa il descopere pe Jules Verne si nu stiu de unde sa inceapa. Cartea este emblematica pentru creatia sa, facand buna practica
+          de stilul sau narativ imbogatit cu detalii stiintifice, avand un ritm narativ constant si previzibil, usor de inteles, ce evita drama si turnurile de situatie.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/alchimistul.jpg" alt="alchimistul pic">
+        <h1>Alchimistul</h1>
+        <h2>Paulo Coelho</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Un volum considerat de multi a fi monumental, dar care personal mi-a parut o incercare amatoare de a fructifica tema potentialului infinit al fiintei umane. Este depasit de multe alte carti si multe alte personaje fictive
+          in ceea ce priveste atat hotarare, tarie de caracter si determinare inspre indeplinirea scopurilor, toate trasaturi pentru care Santiago, protagonistul nostru este admirat. Este privit drept o fabula pentru indeplinirea destinului,
+          dar personal nu imi pare mai mult decat imaginea cautarii unui mod de a face timpul sa treaca mai repede in absenta unui destin: Santiago nu stie pentru ce lupta, doar incearca sa ajunga intr-un loc pe care l-a visat pentru ca nu are
+          nimic mai bun de facut. Mai mult, nu ajunge acolo prin munca si merit propriu neaparat, ci prin intermediul unor ajutoare artificiale, de dimensiune divina, numite "semne" pe parcursul cartii. </p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/baltag.jpg" alt="baltagul pic">
+        <h1>Baltagul</h1>
+        <h2>Mihail Sadoveanu</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Un roman solid care impresioneaza prin taria protagonistei si inspira PUTERE, dar dezamageste prin firul narativ sarac si predictibil si prin caracterul traditionalist, al caruia personal nu sunt fan.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/chtulu.jpg" alt="lovecraft pic">
+        <h1>Chemarea lui Chtulu si alte povestiri</h1>
+        <h2>H.P.Lovecraft</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>O carte demna de toata aprecierea, care a pus bazele genului Horror-ului Cosmic, dar pe care am esuat in a o admira cum se cuvine din cauza lipsei de rabdare. Lovecraft poate fi considerat un maestru al atmosferei, dar care
+          in procesul de a o cladi foloseste foarte mult descrierea, care in cantitati mari poate deveni mundana. Personal, pe parcursul a mai multor pagini de descriere, realizam ca incepeam sa ma gandesc la altele si nu reuseam sa
+          ma concentrez. </p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/scrispierd.jpg" alt="o scrisoare pierduta pic">
+        <h1>O scrisoare pierduta</h1>
+        <h2>I.L.Caragiale</h2>
+        <h3>⭐⭐⭐</h3>
+        <p>Sceneta care se auto-intituleaza drept comedie, dar are un umor deosebit de sec. Cele 3 stele vin din partea satirii politice si a criticii incompetentei din partea asa-zisor paturi superioare ale societatii. Personajele
+          lasa si ele de dorit, depasind normele firescului in ceea ce priveste iesirile emotive si imaturitatea.</p>
+      </div>
+
+    </div>
+
+
+    <div id="star2">
+      <div class="recenzie">
+        <img src="images/ilici.jpg" alt="moartea lui ivan ilici pic">
+        <h1>Moartea lui Ivan Ilici</h1>
+        <h2>Leo Tolstoy</h2>
+        <h3>⭐⭐</h3>
+        <p>80 de pagini de continut care ar fi putut fi spus in sub 5. Si nici alea 5 prea interesante.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/20000.jpg" alt="20 de mii de leghe sub mari pic">
+        <h1>20 de mii de leghe sub mari</h1>
+        <h2>Jules Verne</h2>
+        <h3>⭐⭐</h3>
+        <p>Carte care nu se ridica sub nicio forma la standardul pe care Verne l-a setat in ochii mei la celelalte 3. 400 de pagini de descriere cu ancorare ridicata in biologie, sustinuta pe un fir narativ deosebit de fragil.
+          Premisa promitatoare, executie slaba, potential irosit.</p>
+
+      </div>
+
+
+      <div class="recenzie">
+        <img src="images/moara.jpg" alt="moara cu noroc pic">
+        <h1>Moara cu noroc</h1>
+        <h2>Ioan Slavici</h2>
+        <h3>⭐⭐</h3>
+        <p>Minusuri: mult prea multa analiza interioara, a unui personaj cu un interior slab; absenta aproape in intregime a unui fir narativ; escaladare incompetent executata(150 de pagini de aproape nimic, apoi crime peste crime);
+          personaj feminin de o slabiciune tipica; mi-a picat la bac, am scris 6 pagini si tot n-am luat 10. Plusuri: antagonist chad.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/ciuma.jpg" alt="ciuma pic">
+        <h1>Ciuma</h1>
+        <h2>Albert Camus</h2>
+        <h3>⭐⭐</h3>
+        <p>Voi zice doar ca am adormit de peste 10 ori pana am terminat-o. Si am citit-o in timp de pandemie cand se presupune ca trebuia sa ma intereseze cu atat mai mult.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/caderea.jpg" alt="caderea pic">
+        <h1>Caderea</h1>
+        <h2>Albert Camus</h2>
+        <h3>⭐⭐</h3>
+        <p>Am citit 100 de pagini din ea ca atatea are si nici nu stiu ce am citit.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/idiot.jpg" alt="idiotul pic">
+        <h1>Idiotul</h1>
+        <h2>Fyodor Dostoievski</h2>
+        <h3>⭐⭐</h3>
+        <p>Dupa 100 de pagini in care acest domn idiot parea printre cele mai promitatoare personaje intalnite in literatura, care parea ca intelege perfect mintea umana si stie intocmai ce are de facut pentru a iesi invingator
+          in orice situatie sociala, au urmat 600 in care mi-a fost demonstrat ca m-am inselat grav si e doar un alt erou rus de gramada, orbit de iluzia simtului moralitatii si controlat prea mult de sentimente nefiltrate.</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/tiganci.jpg" alt="la tiganci pic">
+        <h1>La tiganci</h1>
+        <h2>Mircea Eliade</h2>
+        <h3>⭐⭐</h3>
+        <p>Daca eram insurat cred ca preferam sa merg in vizita la mama soacra decat sa citesc vizita expusa in cartea asta.</p>
+      </div>
+
+    </div>
+
+    <div id="star1">
+      <div class="recenzie">
+        <img src="images/ion.jpg" alt="ion pic">
+        <h1>Ion</h1>
+        <h2>Liviu Rebreanu</h2>
+        <h3>⭐</h3>
+        <p>Mi se pare normal si mie sa dai titlu unei carti numele unui personaj si apoi sa ti apara in doar 100 din 500 de pagini, toate celelalte neavand absolut nicio treaba cu el. 4 luni am stat pe nenorocirea asta si regret
+          fiecare minut. NU CITITI CARTI DE BAC!</p>
+      </div>
+
+      <div class="recenzie">
+        <img src="images/mai.jpeg" alt="maitreyi pic">
+        <h1>Maitreyi</h1>
+        <h2>Mircea Eliade</h2>
+        <h3>⭐</h3>
+        <p>Atat de mult interes a trezit cartea asta in mine ca in lunea de dupa weekendul in care am stat s-o citesc (si am citit-o pe toata), cand am dat test de lectura din ea, am dat foaia goala.
+          Si chiar m-am chinuit la testul ala.</p>
+
+      </div>
+
+      <div class="recenzie">
+        <img src="images/donjuan.jpg" alt="don juan pic">
+        <h1>Don Juan</h1>
+        <h2>Moliere</h2>
+        <h3>⭐</h3>
+        <p>Doar din cauza frumusetii acestei minunate carti are poligamia o reputatie asa rea.</p>
+      </div>
+    </div>
+
+    <section style = 'padding: 3 rem; background-color: #F7CCAC;' id = 'comentarii'>
+      <h1 style="margin: 0;">Rubrica de comentarii</h1>
+      <button type="button" name="button" id = 'addComment'>Apasa aici pentru a adauga un comentariu!</button>
+    </section>
+
+    <div class="surpriza" style = "text-align: center; background-color: orange; padding: 1em;">
+      <h3>Apasati tasta '~' pe tastatura pentru o surpriza!</h3>
+    </div>
+
+    <footer >
+      <p>Site făcut în întregime de Tudose Alexandru Ștefan, pentru proiectul de Tehnici Web.</p>
+      <ul>
+        <li>Parte 1(HTML+CSS): Start: 11 aprilie -> Finish: 15 aprilie</li>
+      </ul>
+    </footer>
+    <script type="text/javascript" src = "scriptIndex.js"></script>
+</body>
+
+</html>

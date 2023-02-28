@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1655068004 source:c:\toate\facultate\info\an 1 semestru 2\limbaje formale si automate\lab\algoritmul cyk\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+
+1655068418 source:c:\toate\facultate\info\an 1 semestru 2\limbaje formale si automate\lab\131_tudose_alexandrustefan\algoritmul cyk\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+	<algorithm>
+

@@ -1,0 +1,150 @@
+PUNCT SUPRAVEGHERE
+1. id 'duba' to-date('01-01-2018')  150 6
+2. id 'stand limonada' to-date('10-05-2020') 500 4
+3. id 'fereastra apartament' to-date('15-06-2021') 950 1
+4. id 'duba' to-date('01-01-2022') 50 5
+5. id 'masina veche' sysdate-50 250 7
+
+
+SEDIU
+1. id 'Birou Central' 'Bucuresti' 'Str. Puterii' 432
+2. id 'Filiala Iasi' 'Iasi' 'Str. Palas' 54
+3. id 'Subsectie 7' 'Bucuresti' 'Ale. Ascunsa' 1
+4. id 'Centrul Anti-Mafie' 'Craiova' 'Bd. Sabiilor' 15
+5. id 'Institutul Visinescu' 'Constanta' 'Str. Inecului' 44
+
+AGENTT
+1. id 'Popescu' 'Vasile' 64532 to-date('15-02-2009') 10007 6
+2. id 'Marinescu' 'Marian' 10000 to-date('16-07-2018') 10005 3
+3. id 'Enea' 'Robert' 23114 to-date('10-10-2014') 10005 6
+4. id 'Joacabine' 'Mirel' 23425 to-date('17-11-2016') 10008 5
+5. id 'Rocadura' 'Artur' 234533 to-date('11-11-2000') 10006 9
+
+CRIME
+1. id 'terorism' 6 90000000                 	 15
+2. id 'inalta tradare' 8 60500000           	 16
+3. id 'spionaj' 7 80500000			17
+4. id 'delapidare' 3 9950000			18
+5. id 'atac cibernetic' 6 99999999		19
+
+INDUSTRIE
+1. id 'horeca' '5000025342' 3 		20
+2. id 'autoturisme' '12573864243' 5	21
+3. id 'farmaceutice' '7893543544' 8	22
+4. id 'IT' '35000124353' 7		23
+5. id 'politica' null 5			24
+
+INTERESE
+1. id 'activitati montane' 2 1000
+2. id 'jocuri de noroc' 7 5000
+3. id 'gaming' 3 300
+4. id 'calatorii spontane' 8 6000
+5.  id 'petreceri interlopi' 9 40000
+
+SUBIECT
+1. secv_id.nextval 10000 3
+2. secv_id.nextval 10001 7
+3. secv_id.nextval null 5
+4. secv_id.nextval 10002 4
+5. secv_id.nextval null 3
+6. secv_id.nextval null 7
+7. secv_id.nextval null 8
+8. secv_id.nextval null 8 
+9. secv_id.nextval 10004 4
+10. secv_id.nextval null 1
+11. secv_id.nextval null 3
+12. secv_id.nextval null 2
+13. secv_id.nextval null 4
+14. secv_id.nextval 10003 5
+15. secv_id.nextval null 3
+
+INTERES_OM
+1. 10026 10034
+2. 10027 10036
+3. 10026 10041
+4. 10029 10041
+5. 10029 10042
+6. 10025 10035
+7. 10028 10032
+8. 10026 10036
+9. 10029 10039 			30 31 33 37 38 40 44
+10. 10025 10043
+
+OCUPATIE
+1. secv_id.nextval motostivuitor 1500 4000  	45
+2. secv_id.nextval inginer 3500 12000		46
+3. secv_id.nextval chimist 2000 8000		47
+4. secv_id.nextval programator 3500 60000	48
+5. secv_id.nextval tester 2000 5000		49
+
+PERSOANA_FIZICA
+0. 10032 6030116196416 Nemtanu Violeta to-date('16-01-2003') 'SC Slanina SRL' 'MZ' '724312'
+1. 10034 1940728155764 Vasilescu Ion to-date('28-07-1994') 'Google Junior' 'MX' '483945'
+2. 10035 1880109244504 Marmon Marius to-date('09-01-1988') 'Fiterman Farma' 'MZ' '457453'
+3. 10036 1870218196401 Cormen Viorel to-date('18-02-1987') 'IO' '275421'
+4. 10039 2931212053701 Magdon Magdalena to-date('12-12-1993') 'VE' '348562'
+5. 10041 5000904137459 Verestiuc Radu to-date('04-09-2000') 'AU' '124364'
+6. 10042 6040406454955 Vararu Monica to-date('16-01-2004') 'BU' '854291'
+7. 10043 2970707087952 Baron Robert to-date('07-07-1997') 'BV' '415261'
+
+PERSOANA_JURIDICA
+1 10030 J22/973/2000 RO13611073C 1243 to-date('05-05-2000') '1325531' 'Ion Pavel' 'Trafic de pufarine'
+2 10031 J40/1973/2015 RO45361325C 4241 to-date('06-06-2016') '325634634' 'Victor Manea' 'Regatul Comertului'
+3 10033 J40/1642/2011 RO75327543C 1123 to-date('01-02-2011') '21446432' 'Alexandru Babiles' 'Tinutul Shaorma'
+4 10037 J21/991/2008 RO12345678C 1234 to-date('01-09-2008') '11234456'
+'Ion Velcescu' 'Firma ff legala'
+5 10038 J11/125/2001 RO64262233C 4321 to-date('06-09-2001') '53463474574'
+'Vlad Volonce' 'Baietii grei SRL'
+6 10040 J40/111/2005 RO12775544C 3221 to-date('02-02-2005') '5555555'
+'Mircea Simionescu' 'CazinoBarr' 
+7 10044 J15/125/2020 RO11224464C 123 to-date(12-12-2020) '125532' 'Alex Maces' 'Fabrica de barbati'
+
+SUSPICIUNE_CRIMA
+1 10037 10015 to-date('15-07-2018') 3
+2 10041 10018 to-date('19-02-2020') 12
+3 10043 10019 to-date('12-12-2013') 2
+4 10035 10016 to-date('01-05-2016') 1
+5 10044 10018 to-date('02-03-2019') 10
+6 10036 10016 to-date('02-03-2012') 2
+7 10040 10017 to-date('15-06-2008') 6
+8 10035 10018 to-date('28-11-2021') 2
+9 10044 10019 to-date('26-12-2020') 8
+10 10037 10017 to-date('22-11-2019') 7
+
+SUPRAVEGHERE
+1 10032 10013 to-date(16-08-2021) 
+2 10033 10010 to-date(19-04-2020)
+3 10044 10014 to-date(26-01-2021)
+4 10034 10012 to-date(19-08-2021)
+5 10042 10010 to-date(16-03-2019)
+6 10044 10013 to-date(07-12-2019)
+7 10034 10011 to-date(11-10-2019)
+8 10042 10014 to-date(06-11-2021)
+9 10031 10012 to-date(21-09-2021)
+10 10032 10011 to-date(13-02-2022)
+
+OCUP_OM
+1 10034 10045 10021 7000 'Tractoare si lopeti'
+2 10038 10048 10024 15000 'Vervontis'
+3 10040 10046 10020 3500 'Mercurian'
+4 10041 10049 10022 6432 'Babion'
+5 10043 10047 10021 11003 'Boninu'
+6 10036 10045 10020  5322 'McOron'
+7 10038 10046 10023 1800 'Qurons'
+8 10035 10046 10024 2500 'Baban' 
+9 10037 10047 10022 1532 'Guguc'
+10 10041 10049 10022 3500 'Lelene'
+
+persoane fizice:
+32 34 35 36 39 41 42 43
+
+1.am aici join pe 4 tabele, ordonare, grupari de date, functii grup, filtrare la nivel de grupuri
+2. subcereri sincronizate în care intervin cel puțin 3 tabele, 2 FCT date, CASE
+3. clauza with, filtrare la nivel de linii, 2 fct caract
+4. subcereri nesincronizate 3 tabele, , nvl, decode
+
+
+suspiciuni crime
+35 36 37 40 41 43 44 
+supravegheati
+31 32 33 34 36 37 38 41 42 43 44

@@ -1,0 +1,231 @@
+body{
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+header{
+  background-color: #F7CCAC;
+  height: 720px;
+}
+
+header img:first-of-type{
+  width: 12%;
+  float: left;
+  animation-name: tremur;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tremur {
+  from{margin-top: 0; transform: rotate(0deg);}
+  to {margin-top: 30%; transform: rotate(360deg);}
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+#meniu {
+  margin: 0 5% 5% 40%;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#meniu > li{
+  flex-grow: 1;
+  list-style: none;
+}
+#meniu > li > div{
+  background-color: #C69B7B;
+}
+
+#meniu > li>div:hover + ul{
+  visibility: visible;
+  position: relative;
+  z-index: 100;
+}
+
+#meniu > li li, #meniu > li div{
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  border-width: 1.5px;
+  font-family: "Ubuntu";
+}
+
+
+.submeniu>li{
+  list-style: none;
+  background-color: #C69B7B;
+}
+
+.submeniu:hover{
+  visibility: visible;
+  position: relative;
+  z-index: 100;
+}
+
+.submeniu{
+  padding-left: 0;
+  visibility: hidden;
+}
+
+
+.poza1head
+{
+  position: absolute;
+  width:30%;
+  right: 9%;
+  top: 20%;
+}
+
+.poza2head
+{
+  position: absolute;
+  width: 20%;
+  top:50%;
+  right: 5%;
+}
+
+.poza3head{
+  position:absolute;
+  top:52%;
+  right: 23%;
+  width: 24%;
+}
+
+header > h1
+{
+  font-size: 4em;
+  width: 30%;
+  position: relative;
+  left: 10%;
+  bottom: 10%;
+  text-align: center;
+}
+
+/* de aici incolo despre mine*/
+
+#despre_mine{
+  margin:0;
+  background-color: #826F66;
+  height: 500px;
+}
+
+#despre_mine h1{
+  text-align: center;
+  margin: 0;
+  padding-top: 5%;
+  font-size: 2.5rem;
+}
+#despre_mine > img{
+  margin: 5%;
+  float:left;
+  width: 15%;
+}
+
+#despre_mine > p
+{
+  margin: 0;
+  padding: 6% 7% 7%;
+  font-size: 115%;
+}
+
+/*stats*/
+
+#statistici{
+  background-color: #C69B7B;
+}
+
+#statistici h1, #statistici h3{
+  margin-top: 0;
+  padding: 1%;
+  text-align: center;
+}
+
+.figuristatistici{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.figuristatistici img{
+  width: 90%;
+}
+
+.stat{
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+
+/*profil goodreads*/
+
+#goodreads{
+  background-color: #826F66;
+  height: 650px;
+  position: static;
+}
+
+#goodreads h1{
+  margin: 0;
+  text-align: center;
+  padding: 2%;
+}
+
+.sageata{
+  position: absolute;
+  top: 250%;
+  left: 61%;
+  z-index: 50;
+}
+
+.btngr{
+  display: block;
+  margin: 5% auto 5%;
+}
+
+/*contact*/
+
+#contact{
+  background-color: #C69B7B;
+}
+
+#contact h1, h3{
+  text-align: center;
+  margin: 0;
+  padding-top: 2%;
+}
+
+.end-icons-group{
+  padding: 50px auto 50px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.end-icons-group i {
+  font-size: 50px;
+  padding: 10px;
+  color: #7900FF;
+}
+
+footer
+{
+  background-color: #826F66;
+  text-align: center;
+
+}
+
+footer p, footer ul{
+  margin: 0;
+  padding: 20px;
+}

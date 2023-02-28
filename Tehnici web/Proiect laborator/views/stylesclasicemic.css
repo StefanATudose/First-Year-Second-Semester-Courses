@@ -1,0 +1,160 @@
+
+body{
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+header{
+  background-image: url("images/clasice.jpg");
+  height: 720px;
+}
+
+header img:first-of-type{
+  width: 12%;
+  float: left;
+  animation-name: tremur;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tremur {
+  from{margin-top: 0; transform: rotate(0deg);}
+  to {margin-top: 30%; transform: rotate(360deg);}
+}
+
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+#meniu {
+  margin: 0 5% 5% 40%;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#meniu > li{
+  flex-grow: 1;
+  list-style: none;
+}
+#meniu > li > div{
+  background-color: #C69B7B;
+}
+
+#meniu > li>div:hover + ul{
+  visibility: visible;
+  position: relative;
+  z-index: 100;
+}
+
+#meniu > li li, #meniu > li div{
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  border-width: 1.5px;
+  font-family: "Ubuntu";
+}
+
+
+.submeniu>li{
+  list-style: none;
+  background-color: #C69B7B;
+}
+
+.submeniu:hover{
+  visibility: visible;
+  position: relative;
+  z-index: 100;
+}
+
+.submeniu{
+  padding-left: 0;
+  visibility: hidden;
+}
+
+.textintroclasic{
+  background-color: white;
+  width: 50%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+
+header > h1
+{
+  font-size: 4em;
+  width: 30%;
+  position: relative;
+  left: 10%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.divBtnApl{
+  background-color: #826F66;
+  text-align: center;
+  padding: 2em;
+}
+
+.recenzie img{
+  height: 400px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.recenzie img:hover{
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+
+#star5, #star3, #star1{
+  background-color: #C69B7B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 5% 0 5%;
+}
+
+#star5 .recenzie, #star3 .recenzie, #star1 .recenzie{
+  flex-grow: 1;
+
+}
+
+#star4, #star2{
+  background-color: #F7CCAC;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3% 5% 3% 5%;
+}
+
+#star4 .recenzie, #star2 .recenzie{
+  flex-grow: 1;
+
+}
+
+
+.preend{
+  background-color: #C69B7B;
+  padding: 2% 3% 2%;
+}
+
+.preend > h1{
+  text-align: center;
+  margin: 0;
+}
+
+footer{
+  text-align: center;
+  background-color: #826F66;
+}
+
+footer > *{
+  margin: 0;
+  padding-top: 1%;
+}

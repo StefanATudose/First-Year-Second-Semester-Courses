@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex2</title>
+  </head>
+  <style media="screen">
+    p{
+      display: inline;
+    }
+    .c1{
+      color: red;
+    }
+    .c2{
+      color: green;
+    }
+    .c3{
+      color: yellow;
+    }
+    .c4{
+      color: purple;
+    }
+    .c5{
+      color: cyan;
+    }
+  </style>
+
+  <script type="text/javascript">
+    window.onload = function(){
+      var data = new Date();
+      var minute = data.getMinutes();
+      var cateParagrafe = Math.max(10, minute);
+      for (let i = 0; i < cateParagrafe; i++){
+        var parNou = document.createElement('p');
+        parNou.innerHTML = "Alexandru-Stefan<br>";
+        parNou.classList.add("c" + (Math.floor(Math.random() * 5)+1).toString());
+        document.body.appendChild(parNou);
+      }
+      document.body.addEventListener('click', function(event){
+        alert(event.clientY);
+      });
+      var paragrafe = document.getElementsByTagName("p");
+      for (let i = 0; i < paragrafe.length; i++){
+        paragrafe[i].addEventListener('click', function(event){
+          var clasa = this.classList.item(0);
+          var deSters = document.getElementsByClassName(clasa);
+
+          for (let j = 0; j < deSters.length; j++){
+            deSters[j].parentNode.removeChild(deSters[j]);
+            j--;
+          }
+
+          event.stopPropagation();
+        });
+
+      }
+
+    }
+  </script>
+  <body>
+
+  </body>
+</html>

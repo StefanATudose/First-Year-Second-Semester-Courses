@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ex 1</title>
+  <style>
+    @media screen and (min-width: 801px) {
+      #container {
+        margin: 0 auto;
+        width: 500px;
+        height: 500px;
+        background-color: green;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 0;
+      }
+
+      .patrat:nth-child(even) {
+        border-color: red;
+        border-style: solid;
+        border-width: 1px;
+        height: inherit;
+        flex-grow: 1;
+      }
+
+      .patrat:nth-child(odd) {
+        border-color: blue;
+        border-style: solid;
+        border-width: 1px;
+        height: inherit;
+        flex-grow: 1;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      @keyframes schimbCuloare {
+        from {
+          background-color: white;
+        }
+
+        to {
+          background-color: yellow;
+        }
+      }
+
+      body {
+        animation-name: schimbCuloare;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+
+      #container {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        background-color:green;
+        width: 50%;
+        position: relative;
+      }
+
+      .patrat {
+        border-width:1px;
+        border-style: solid;
+        border-color: red;
+        width: 100%;
+        height:20%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id='container'>
+    <div class="patrat"></div>
+    <div class="patrat"></div>
+    <div class="patrat"></div>
+    <div class="patrat"></div>
+    <div class="patrat"></div>
+  </div>
+</body>
+
+</html>

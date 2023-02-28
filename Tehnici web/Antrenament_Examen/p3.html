@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex 3</title>
+    <script type="text/javascript">
+      var culCurenta, culori;
+      window.onload = function(){
+        var elemData = document.getElementById('data');
+        var dataCurenta = new Date();
+        var formatData = "Data: " + dataCurenta.getDate() + '-' + (dataCurenta.getMonth()+1) + '-' + (dataCurenta.getYear()+1900);
+        document.getElementsByTagName('input')[0].value = formatData;
+        culori = document.getElementsByTagName('option');
+        if (localStorage.length > 0){              ///pentru cerinta B
+          var culoare = localStorage.getItem('culoare');
+          document.getElementsByTagName('input')[0].style.color = culori[culoare].value;
+          localStorage.clear();
+        }
+        else{
+          culCurenta = -1;
+          var schimbInterval = setInterval(schimbCuloare, 3000);
+          schimbInterval;
+          document.body.addEventListener('keydown', function(event){
+            if (event.key == 's'){
+              clearInterval(schimbInterval);
+              localStorage.setItem('culoare', culCurenta);
+            }
+          });
+        }
+
+
+
+      }
+
+      function schimbCuloare(){
+        //culori[culCurenta].removeAttribute('selected');
+        culCurenta = (culCurenta+1) % 3;
+        culori[culCurenta].selected = true;
+        document.getElementsByTagName('input')[0].style.color = culori[culCurenta].value;
+      }
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <input type="text" name="data" id = 'data'>
+      <select class="" name="culori">
+        <option value="red" selected>Red</option>
+        <option value="green"> Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+    </form>
+  </body>
+</html>

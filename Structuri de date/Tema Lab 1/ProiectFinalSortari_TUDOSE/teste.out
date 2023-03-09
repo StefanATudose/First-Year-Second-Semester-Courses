@@ -1,0 +1,54 @@
+
+Viteza de sortare pentru 500 elemente, cu valori cuprinse intre 0 si 10000 inclusiv:
+
+Sortare nativa C++: 0 milisecunde
+Sortarea a functionat cu succes!
+MergeSort: 0 milisecunde
+Sortarea a functionat cu succes!
+Radix Sort in baza 10: 0 milisecunde
+Sortarea a functionat cu succes!
+Shell Sort(original n/2 gap): 0 milisecunde
+Sortarea a functionat cu succes!
+Quick Sort: 0 milisecunde
+Sortarea a functionat cu succes!
+Count Sort: 0 milisecunde
+Sortarea a functionat cu succes!
+
+Viteza de sortare pentru 10000 elemente, cu valori cuprinse intre 0 si 2500 inclusiv:
+
+Sortare nativa C++: 2 milisecunde
+Sortarea a functionat cu succes!
+MergeSort: 1 milisecunde
+Sortarea a functionat cu succes!
+Radix Sort in baza 10: 0 milisecunde
+Sortarea a functionat cu succes!
+Shell Sort(original n/2 gap): 1 milisecunde
+Sortarea a functionat cu succes!
+Quick Sort: 1 milisecunde
+Sortarea a functionat cu succes!
+Count Sort: 0 milisecunde
+Sortarea a functionat cu succes!
+
+Viteza de sortare pentru 400000 elemente, cu valori cuprinse intre 0 si 4600 inclusiv:
+
+Sortare nativa C++: 101 milisecunde
+Sortarea a functionat cu succes!
+MergeSort: 139 milisecunde
+Sortarea a functionat cu succes!
+Radix Sort in baza 10: 56 milisecunde
+Sortarea a functionat cu succes!
+Shell Sort(original n/2 gap): 188 milisecunde
+Sortarea a functionat cu succes!
+Quick Sort: 86 milisecunde
+Sortarea a functionat cu succes!
+Count Sort: 4 milisecunde
+Sortarea a functionat cu succes!
+
+Viteza de sortare pentru 1000000 elemente, cu valori cuprinse intre 0 si 10000 inclusiv:
+
+Sortare nativa C++: 269 milisecunde
+Sortarea a functionat cu succes!
+MergeSort: 362 milisecunde
+Sortarea a functionat cu succes!
+Radix Sort in baza 10: 175 milisecunde
+Sortarea a functionat cu succes!
